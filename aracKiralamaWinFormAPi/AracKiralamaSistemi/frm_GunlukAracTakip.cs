@@ -68,5 +68,10 @@ namespace AracKiralamaSistemi
 				MessageBox.Show("Error happened: " + ex.Message);
 			}
 		}
+
+		private void frm_GunlukAracTakip_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

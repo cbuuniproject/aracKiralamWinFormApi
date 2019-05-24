@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AracKiralamaSistemi
 {
-    public partial class frm_SirketLogin : Form
+    public partial class frm_CalisanLogin : Form
     {
-        public frm_SirketLogin()
+        public frm_CalisanLogin()
         {
             InitializeComponent();
         }
@@ -43,5 +43,10 @@ namespace AracKiralamaSistemi
 				this.Hide();
 			}
         }
-    }
+
+		private void lbl_KayanMetin_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

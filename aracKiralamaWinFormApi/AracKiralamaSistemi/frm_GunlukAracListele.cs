@@ -14,19 +14,14 @@ using System.Windows.Forms;
 
 namespace AracKiralamaSistemi
 {
-    public partial class frm_KiralamaGoruntule : Form
-    {
-        public frm_KiralamaGoruntule()
-        {
-            InitializeComponent();
-        }
-
-		private void frm_KiralamaGoruntule_Load(object sender, EventArgs e)
+	public partial class frm_GunlukAracListele : Form
+	{
+		public frm_GunlukAracListele()
 		{
-		
+			InitializeComponent();
 		}
 
-		private async void btnKiralamaSil_ClickAsync(object sender, EventArgs e)
+		private async void btn_Listele_ClickAsync(object sender, EventArgs e)
 		{
 			try
 			{
@@ -39,7 +34,7 @@ namespace AracKiralamaSistemi
 					client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
 					// Get Request from the URI
-					using (var result = await client.GetAsync("api/KiralamaBusiness"))
+					using (var result = await client.GetAsync("api/GunlukAracTakip"))
 					{
 						// Check the Result
 						if (result.IsSuccessStatusCode)
@@ -49,7 +44,7 @@ namespace AracKiralamaSistemi
 
 							// Deserialize the string with a Json Converter to ResponseContent object and fill the datagrid
 							dg_Listele.DataSource =
-								JsonConvert.DeserializeObject<ResponseContent<Kiralama>>(value).Data.ToList();
+								JsonConvert.DeserializeObject<ResponseContent<GunlukAracTakip>>(value).Data.ToList();
 						}
 					}
 				}

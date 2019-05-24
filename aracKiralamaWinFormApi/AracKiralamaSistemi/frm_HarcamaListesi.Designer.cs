@@ -1,6 +1,6 @@
 ﻿namespace AracKiralamaSistemi
 {
-	partial class frm_AracGoruntule
+	partial class frm_HarcamaListesi
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,39 +29,38 @@
 		private void InitializeComponent()
 		{
 			this.dg_Listele = new System.Windows.Forms.DataGridView();
-			this.button1 = new System.Windows.Forms.Button();
+			this.btn_ = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dg_Listele)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// dg_Listele
 			// 
 			this.dg_Listele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dg_Listele.Location = new System.Drawing.Point(12, 12);
+			this.dg_Listele.Location = new System.Drawing.Point(32, 34);
 			this.dg_Listele.Name = "dg_Listele";
 			this.dg_Listele.RowTemplate.Height = 24;
-			this.dg_Listele.Size = new System.Drawing.Size(776, 328);
+			this.dg_Listele.Size = new System.Drawing.Size(711, 182);
 			this.dg_Listele.TabIndex = 0;
 			// 
-			// button1
+			// btn_
 			// 
-			this.button1.Location = new System.Drawing.Point(330, 389);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(126, 31);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "Araçları Listele";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_ClickAsync);
+			this.btn_.Location = new System.Drawing.Point(250, 264);
+			this.btn_.Name = "btn_";
+			this.btn_.Size = new System.Drawing.Size(163, 31);
+			this.btn_.TabIndex = 1;
+			this.btn_.Text = "Harcamaları Listele";
+			this.btn_.UseVisualStyleBackColor = true;
+			this.btn_.Click += new System.EventHandler(this.button1_ClickAsync);
 			// 
-			// frm_AracGoruntule
+			// frm_HarcamaListesi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.btn_);
 			this.Controls.Add(this.dg_Listele);
-			this.Name = "frm_AracGoruntule";
-			this.Text = "Araç Listele";
-			this.Load += new System.EventHandler(this.frm_AracGoruntule_Load);
+			this.Name = "frm_HarcamaListesi";
+			this.Text = "Harcama Listesi";
 			((System.ComponentModel.ISupportInitialize)(this.dg_Listele)).EndInit();
 			this.ResumeLayout(false);
 
@@ -70,6 +69,6 @@
 		#endregion
 
 		private System.Windows.Forms.DataGridView dg_Listele;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btn_;
 	}
 }

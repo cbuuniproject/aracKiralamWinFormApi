@@ -28,19 +28,19 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dg_Listele = new System.Windows.Forms.DataGridView();
 			this.button1 = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dg_Listele)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// dataGridView1
+			// dg_Listele
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(34, 41);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(716, 290);
-			this.dataGridView1.TabIndex = 0;
+			this.dg_Listele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dg_Listele.Location = new System.Drawing.Point(34, 41);
+			this.dg_Listele.Name = "dg_Listele";
+			this.dg_Listele.RowTemplate.Height = 24;
+			this.dg_Listele.Size = new System.Drawing.Size(716, 290);
+			this.dg_Listele.TabIndex = 0;
 			// 
 			// button1
 			// 
@@ -50,7 +50,7 @@
 			this.button1.TabIndex = 1;
 			this.button1.Text = "Listele";
 			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.button1.Click += new System.EventHandler(this.button1_ClickAsync);
 			// 
 			// frm_MusteriListele
 			// 
@@ -58,18 +58,18 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.dg_Listele);
 			this.Name = "frm_MusteriListele";
 			this.Text = "frm_MusteriListele";
 			this.Load += new System.EventHandler(this.frm_MusteriListele_Load);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dg_Listele)).EndInit();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dg_Listele;
 		private System.Windows.Forms.Button button1;
 	}
 }

@@ -44,7 +44,7 @@
 			this.cmbAracId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.cmbAracId.FormattingEnabled = true;
 			this.cmbAracId.Location = new System.Drawing.Point(261, 108);
-			this.cmbAracId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbAracId.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbAracId.Name = "cmbAracId";
 			this.cmbAracId.Size = new System.Drawing.Size(204, 28);
 			this.cmbAracId.TabIndex = 0;
@@ -76,7 +76,7 @@
 			this.cmbKiralamaId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.cmbKiralamaId.FormattingEnabled = true;
 			this.cmbKiralamaId.Location = new System.Drawing.Point(261, 186);
-			this.cmbKiralamaId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbKiralamaId.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbKiralamaId.Name = "cmbKiralamaId";
 			this.cmbKiralamaId.Size = new System.Drawing.Size(204, 28);
 			this.cmbKiralamaId.TabIndex = 2;
@@ -84,7 +84,7 @@
 			// dateTimePickerTarih
 			// 
 			this.dateTimePickerTarih.Location = new System.Drawing.Point(261, 149);
-			this.dateTimePickerTarih.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.dateTimePickerTarih.Margin = new System.Windows.Forms.Padding(4);
 			this.dateTimePickerTarih.Name = "dateTimePickerTarih";
 			this.dateTimePickerTarih.Size = new System.Drawing.Size(204, 22);
 			this.dateTimePickerTarih.TabIndex = 4;
@@ -115,7 +115,7 @@
 			// 
 			this.txtGunlukKM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.txtGunlukKM.Location = new System.Drawing.Point(261, 233);
-			this.txtGunlukKM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtGunlukKM.Margin = new System.Windows.Forms.Padding(4);
 			this.txtGunlukKM.Name = "txtGunlukKM";
 			this.txtGunlukKM.Size = new System.Drawing.Size(204, 26);
 			this.txtGunlukKM.TabIndex = 8;
@@ -123,7 +123,7 @@
 			// button1
 			// 
 			this.button1.Location = new System.Drawing.Point(261, 281);
-			this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.button1.Margin = new System.Windows.Forms.Padding(4);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(205, 42);
 			this.button1.TabIndex = 9;
@@ -145,9 +145,10 @@
 			this.Controls.Add(this.cmbKiralamaId);
 			this.Controls.Add(this.lblAracId);
 			this.Controls.Add(this.cmbAracId);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frm_GunlukAracTakip";
-			this.Text = "frm_GunlukAracTakip";
+			this.Text = "Günlük Araç Bilgisi Ekle";
+			this.Load += new System.EventHandler(this.frm_GunlukAracTakip_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

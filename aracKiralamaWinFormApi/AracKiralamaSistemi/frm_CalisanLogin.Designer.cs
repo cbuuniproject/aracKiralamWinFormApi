@@ -1,6 +1,6 @@
 ﻿namespace AracKiralamaSistemi
 {
-    partial class frm_SirketLogin
+    partial class frm_CalisanLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -53,7 +53,7 @@
 			// 
 			this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.txtKullaniciAdi.Location = new System.Drawing.Point(331, 181);
-			this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(4);
 			this.txtKullaniciAdi.Name = "txtKullaniciAdi";
 			this.txtKullaniciAdi.Size = new System.Drawing.Size(228, 30);
 			this.txtKullaniciAdi.TabIndex = 1;
@@ -73,7 +73,7 @@
 			// 
 			this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.txtSifre.Location = new System.Drawing.Point(331, 228);
-			this.txtSifre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtSifre.Margin = new System.Windows.Forms.Padding(4);
 			this.txtSifre.Name = "txtSifre";
 			this.txtSifre.Size = new System.Drawing.Size(228, 30);
 			this.txtSifre.TabIndex = 3;
@@ -82,7 +82,7 @@
 			// 
 			this.btn_Giris.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.btn_Giris.Location = new System.Drawing.Point(167, 276);
-			this.btn_Giris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btn_Giris.Margin = new System.Windows.Forms.Padding(4);
 			this.btn_Giris.Name = "btn_Giris";
 			this.btn_Giris.Size = new System.Drawing.Size(393, 44);
 			this.btn_Giris.TabIndex = 5;
@@ -100,6 +100,7 @@
 			this.lbl_KayanMetin.Size = new System.Drawing.Size(393, 25);
 			this.lbl_KayanMetin.TabIndex = 6;
 			this.lbl_KayanMetin.Text = " Lütfen kullanıcı adı ve şifrenizi giriniz... ";
+			this.lbl_KayanMetin.Click += new System.EventHandler(this.lbl_KayanMetin_Click);
 			// 
 			// timer1
 			// 
@@ -119,9 +120,9 @@
 			this.Controls.Add(this.txtKullaniciAdi);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frm_SirketLogin";
-			this.Text = "SirketLogin";
+			this.Text = "Çalışan Girişi";
 			this.Load += new System.EventHandler(this.frm_SirketLogin_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

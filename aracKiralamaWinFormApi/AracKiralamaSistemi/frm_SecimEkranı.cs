@@ -19,13 +19,15 @@ namespace AracKiralamaSistemi
 
         private void btn_Sirket_Click(object sender, EventArgs e)
         {
-            frm_SirketLogin srkt = new frm_SirketLogin();
+            frm_CalisanLogin srkt = new frm_CalisanLogin();
+			Hide();
             srkt.Show();
         }
 
         private void btn_Musteri_Click(object sender, EventArgs e)
         {
 			frm_AdminLogin adminLogin = new frm_AdminLogin();
+			Hide();
 			adminLogin.ShowDialog();
 		}
     }
