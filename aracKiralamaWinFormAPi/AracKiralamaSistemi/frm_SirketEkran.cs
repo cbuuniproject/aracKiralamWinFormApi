@@ -56,8 +56,31 @@ namespace AracKiralamaSistemi
 
 		private void kiralamaGörüntüleToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			frm_KiralamaGoruntule frm_KiralamaGoruntule = new frm_KiralamaGoruntule();
-			frm_KiralamaGoruntule.ShowDialog();
+			frm_GunlukAracTakip frm_GunlukArac = new frm_GunlukAracTakip();
+			frm_GunlukArac.ShowDialog();
+		}
+
+		private void gunlukAracTakipMenuItem1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void kiralananAraçBilgisiEkleToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frm_KiralamaEkle frm_KiralamaEkle = new frm_KiralamaEkle();
+			frm_KiralamaEkle.ShowDialog();
+		}
+
+		private void kiralananAraçTakipListesiToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frm_KiralamaGoruntule _KiralamaGoruntule = new frm_KiralamaGoruntule();
+			_KiralamaGoruntule.ShowDialog();
+		}
+
+		private void rezervasyonGörüntüleToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frm_GunlukAracListele gunlukAracListele = new frm_GunlukAracListele();
+			gunlukAracListele.ShowDialog();
 		}
 	}
 }

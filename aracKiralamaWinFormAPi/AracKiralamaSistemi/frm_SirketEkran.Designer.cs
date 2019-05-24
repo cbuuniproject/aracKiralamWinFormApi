@@ -36,6 +36,9 @@
 			this.kiralamaVeRezervasyonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.kiralamaGörüntüleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.rezervasyonGörüntüleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.gunlukAracTakipMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.kiralananAraçBilgisiEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.kiralananAraçTakipListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.müşteriİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.müşteriEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.müşteriListeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,9 +51,6 @@
 			this.harcamaTürüİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.harcamaTuruEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.harcamaTuruListeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.gunlukAracTakipMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-			this.kiralananAraçBilgisiEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.kiralananAraçTakipListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -85,20 +85,20 @@
 			// araçEklemeToolStripMenuItem1
 			// 
 			this.araçEklemeToolStripMenuItem1.Name = "araçEklemeToolStripMenuItem1";
-			this.araçEklemeToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+			this.araçEklemeToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
 			this.araçEklemeToolStripMenuItem1.Text = "Araç Ekle";
 			this.araçEklemeToolStripMenuItem1.Click += new System.EventHandler(this.araçEklemeToolStripMenuItem1_Click);
 			// 
 			// araçSilmeToolStripMenuItem
 			// 
 			this.araçSilmeToolStripMenuItem.Name = "araçSilmeToolStripMenuItem";
-			this.araçSilmeToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+			this.araçSilmeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
 			this.araçSilmeToolStripMenuItem.Text = "Araç Sil";
 			// 
 			// araçGüncelleToolStripMenuItem
 			// 
 			this.araçGüncelleToolStripMenuItem.Name = "araçGüncelleToolStripMenuItem";
-			this.araçGüncelleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+			this.araçGüncelleToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
 			this.araçGüncelleToolStripMenuItem.Text = "Araçları Listele";
 			this.araçGüncelleToolStripMenuItem.Click += new System.EventHandler(this.araçGüncelleToolStripMenuItem_Click);
 			// 
@@ -108,21 +108,46 @@
             this.kiralamaGörüntüleToolStripMenuItem,
             this.rezervasyonGörüntüleToolStripMenuItem});
 			this.kiralamaVeRezervasyonToolStripMenuItem.Name = "kiralamaVeRezervasyonToolStripMenuItem";
-			this.kiralamaVeRezervasyonToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
-			this.kiralamaVeRezervasyonToolStripMenuItem.Text = "Kiralama ve Rezervasyon";
+			this.kiralamaVeRezervasyonToolStripMenuItem.Size = new System.Drawing.Size(158, 24);
+			this.kiralamaVeRezervasyonToolStripMenuItem.Text = "Kirllanmış Araç Takip";
 			// 
 			// kiralamaGörüntüleToolStripMenuItem
 			// 
 			this.kiralamaGörüntüleToolStripMenuItem.Name = "kiralamaGörüntüleToolStripMenuItem";
-			this.kiralamaGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
-			this.kiralamaGörüntüleToolStripMenuItem.Text = "Kiralama Görüntüle";
+			this.kiralamaGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+			this.kiralamaGörüntüleToolStripMenuItem.Text = "Kayıt Ekle";
 			this.kiralamaGörüntüleToolStripMenuItem.Click += new System.EventHandler(this.kiralamaGörüntüleToolStripMenuItem_Click);
 			// 
 			// rezervasyonGörüntüleToolStripMenuItem
 			// 
 			this.rezervasyonGörüntüleToolStripMenuItem.Name = "rezervasyonGörüntüleToolStripMenuItem";
-			this.rezervasyonGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
-			this.rezervasyonGörüntüleToolStripMenuItem.Text = "Rezervasyon Görüntüle";
+			this.rezervasyonGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+			this.rezervasyonGörüntüleToolStripMenuItem.Text = "Takip Durumları Listele";
+			this.rezervasyonGörüntüleToolStripMenuItem.Click += new System.EventHandler(this.rezervasyonGörüntüleToolStripMenuItem_Click);
+			// 
+			// gunlukAracTakipMenuItem1
+			// 
+			this.gunlukAracTakipMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kiralananAraçBilgisiEkleToolStripMenuItem,
+            this.kiralananAraçTakipListesiToolStripMenuItem});
+			this.gunlukAracTakipMenuItem1.Name = "gunlukAracTakipMenuItem1";
+			this.gunlukAracTakipMenuItem1.Size = new System.Drawing.Size(140, 24);
+			this.gunlukAracTakipMenuItem1.Text = "Kiralama İşlemleri";
+			this.gunlukAracTakipMenuItem1.Click += new System.EventHandler(this.gunlukAracTakipMenuItem1_Click);
+			// 
+			// kiralananAraçBilgisiEkleToolStripMenuItem
+			// 
+			this.kiralananAraçBilgisiEkleToolStripMenuItem.Name = "kiralananAraçBilgisiEkleToolStripMenuItem";
+			this.kiralananAraçBilgisiEkleToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
+			this.kiralananAraçBilgisiEkleToolStripMenuItem.Text = "Kiralanan Araç Bilgisi Ekle";
+			this.kiralananAraçBilgisiEkleToolStripMenuItem.Click += new System.EventHandler(this.kiralananAraçBilgisiEkleToolStripMenuItem_Click);
+			// 
+			// kiralananAraçTakipListesiToolStripMenuItem
+			// 
+			this.kiralananAraçTakipListesiToolStripMenuItem.Name = "kiralananAraçTakipListesiToolStripMenuItem";
+			this.kiralananAraçTakipListesiToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
+			this.kiralananAraçTakipListesiToolStripMenuItem.Text = "Kiralanan Araç Takip Listesi";
+			this.kiralananAraçTakipListesiToolStripMenuItem.Click += new System.EventHandler(this.kiralananAraçTakipListesiToolStripMenuItem_Click);
 			// 
 			// müşteriİşlemleriToolStripMenuItem
 			// 
@@ -159,13 +184,13 @@
 			// rolEkleToolStripMenuItem
 			// 
 			this.rolEkleToolStripMenuItem.Name = "rolEkleToolStripMenuItem";
-			this.rolEkleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+			this.rolEkleToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
 			this.rolEkleToolStripMenuItem.Text = "Rol Ekle";
 			// 
 			// rolListeleToolStripMenuItem
 			// 
 			this.rolListeleToolStripMenuItem.Name = "rolListeleToolStripMenuItem";
-			this.rolListeleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+			this.rolListeleToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
 			this.rolListeleToolStripMenuItem.Text = "Rol Listele";
 			// 
 			// harcamalarToolStripMenuItem
@@ -180,13 +205,13 @@
 			// harcamaEkleToolStripMenuItem
 			// 
 			this.harcamaEkleToolStripMenuItem.Name = "harcamaEkleToolStripMenuItem";
-			this.harcamaEkleToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+			this.harcamaEkleToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
 			this.harcamaEkleToolStripMenuItem.Text = "Harcama Ekle";
 			// 
 			// harcamaListToolStripMenuItem
 			// 
 			this.harcamaListToolStripMenuItem.Name = "harcamaListToolStripMenuItem";
-			this.harcamaListToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+			this.harcamaListToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
 			this.harcamaListToolStripMenuItem.Text = "Harcama List";
 			// 
 			// harcamaTürüİşlemleriToolStripMenuItem
@@ -209,27 +234,6 @@
 			this.harcamaTuruListeleToolStripMenuItem.Name = "harcamaTuruListeleToolStripMenuItem";
 			this.harcamaTuruListeleToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
 			this.harcamaTuruListeleToolStripMenuItem.Text = "Harcama Turu Listele";
-			// 
-			// gunlukAracTakipMenuItem1
-			// 
-			this.gunlukAracTakipMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kiralananAraçBilgisiEkleToolStripMenuItem,
-            this.kiralananAraçTakipListesiToolStripMenuItem});
-			this.gunlukAracTakipMenuItem1.Name = "gunlukAracTakipMenuItem1";
-			this.gunlukAracTakipMenuItem1.Size = new System.Drawing.Size(210, 24);
-			this.gunlukAracTakipMenuItem1.Text = "Günlük Kiralan Araç İşlemleri";
-			// 
-			// kiralananAraçBilgisiEkleToolStripMenuItem
-			// 
-			this.kiralananAraçBilgisiEkleToolStripMenuItem.Name = "kiralananAraçBilgisiEkleToolStripMenuItem";
-			this.kiralananAraçBilgisiEkleToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
-			this.kiralananAraçBilgisiEkleToolStripMenuItem.Text = "Kiralanan Araç Bilgisi Ekle";
-			// 
-			// kiralananAraçTakipListesiToolStripMenuItem
-			// 
-			this.kiralananAraçTakipListesiToolStripMenuItem.Name = "kiralananAraçTakipListesiToolStripMenuItem";
-			this.kiralananAraçTakipListesiToolStripMenuItem.Size = new System.Drawing.Size(262, 26);
-			this.kiralananAraçTakipListesiToolStripMenuItem.Text = "Kiralanan Araç Takip Listesi";
 			// 
 			// frm_SirketEkran
 			// 
