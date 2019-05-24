@@ -60,7 +60,7 @@
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.dg_Personel);
 			this.Name = "frm_PersonelList";
-			this.Text = "frm_PersonelList";
+			this.Text = "Personel Listele";
 			this.Load += new System.EventHandler(this.frm_PersonelList_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dg_Personel)).EndInit();
 			this.ResumeLayout(false);

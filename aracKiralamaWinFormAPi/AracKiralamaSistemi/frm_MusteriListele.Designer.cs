@@ -60,7 +60,7 @@
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.dg_Listele);
 			this.Name = "frm_MusteriListele";
-			this.Text = "frm_MusteriListele";
+			this.Text = "Musteri Listele";
 			this.Load += new System.EventHandler(this.frm_MusteriListele_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dg_Listele)).EndInit();
 			this.ResumeLayout(false);

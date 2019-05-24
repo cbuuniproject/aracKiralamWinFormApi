@@ -109,7 +109,7 @@
 			this.Controls.Add(this.txtPass);
 			this.Controls.Add(this.txtUserName);
 			this.Name = "frm_KullaniciEkle";
-			this.Text = "frm_KullaniciEkle";
+			this.Text = "Kullanici Ekle";
 			this.Load += new System.EventHandler(this.frm_KullaniciEkle_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

@@ -107,7 +107,7 @@
 			this.timer1.Interval = 200;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
-			// frm_SirketLogin
+			// frm_CalisanLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -121,7 +121,8 @@
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
 			this.Margin = new System.Windows.Forms.Padding(4);
-			this.Name = "frm_SirketLogin";
+			this.Name = "frm_CalisanLogin";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Çalışan Girişi";
 			this.Load += new System.EventHandler(this.frm_SirketLogin_Load);
 			this.ResumeLayout(false);

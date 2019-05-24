@@ -48,11 +48,11 @@
 			// 
 			this.btn_Sirket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.btn_Sirket.Location = new System.Drawing.Point(257, 78);
-			this.btn_Sirket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btn_Sirket.Margin = new System.Windows.Forms.Padding(4);
 			this.btn_Sirket.Name = "btn_Sirket";
 			this.btn_Sirket.Size = new System.Drawing.Size(116, 59);
 			this.btn_Sirket.TabIndex = 1;
-			this.btn_Sirket.Text = "Şirket";
+			this.btn_Sirket.Text = "Personel";
 			this.btn_Sirket.UseVisualStyleBackColor = true;
 			this.btn_Sirket.Click += new System.EventHandler(this.btn_Sirket_Click);
 			// 
@@ -60,7 +60,7 @@
 			// 
 			this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.btnAdmin.Location = new System.Drawing.Point(257, 160);
-			this.btnAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.btnAdmin.Name = "btnAdmin";
 			this.btnAdmin.Size = new System.Drawing.Size(116, 59);
 			this.btnAdmin.TabIndex = 2;
@@ -78,8 +78,9 @@
 			this.Controls.Add(this.btn_Sirket);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frm_SecimEkrani";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Seçim Ekranı";
 			this.ResumeLayout(false);
 			this.PerformLayout();

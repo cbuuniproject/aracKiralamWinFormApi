@@ -37,7 +37,7 @@
 			// 
 			this.txtRolAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.txtRolAd.Location = new System.Drawing.Point(148, 90);
-			this.txtRolAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtRolAd.Margin = new System.Windows.Forms.Padding(4);
 			this.txtRolAd.Name = "txtRolAd";
 			this.txtRolAd.Size = new System.Drawing.Size(180, 26);
 			this.txtRolAd.TabIndex = 0;
@@ -45,7 +45,7 @@
 			// btnRolEkle
 			// 
 			this.btnRolEkle.Location = new System.Drawing.Point(181, 143);
-			this.btnRolEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnRolEkle.Margin = new System.Windows.Forms.Padding(4);
 			this.btnRolEkle.Name = "btnRolEkle";
 			this.btnRolEkle.Size = new System.Drawing.Size(103, 47);
 			this.btnRolEkle.TabIndex = 1;
@@ -72,9 +72,9 @@
 			this.Controls.Add(this.lblRolAd);
 			this.Controls.Add(this.btnRolEkle);
 			this.Controls.Add(this.txtRolAd);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frm_RolEkle";
-			this.Text = "frm_RolEkle";
+			this.Text = "Rol Ekle";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

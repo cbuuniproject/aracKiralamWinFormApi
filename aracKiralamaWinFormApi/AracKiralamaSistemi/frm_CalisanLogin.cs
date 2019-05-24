@@ -20,9 +20,11 @@ namespace AracKiralamaSistemi
         private void frm_SirketLogin_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-        }
+			txtSifre.PasswordChar = '*';
 
-        private void timer1_Tick(object sender, EventArgs e)
+		}
+
+		private void timer1_Tick(object sender, EventArgs e)
         {
             lbl_KayanMetin.Text = lbl_KayanMetin.Text.Substring(1) + lbl_KayanMetin.Text.Substring(0, 1);
         }

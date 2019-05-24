@@ -63,7 +63,7 @@
 			this.cmbSirketId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.cmbSirketId.FormattingEnabled = true;
 			this.cmbSirketId.Location = new System.Drawing.Point(269, 69);
-			this.cmbSirketId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbSirketId.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbSirketId.Name = "cmbSirketId";
 			this.cmbSirketId.Size = new System.Drawing.Size(203, 26);
 			this.cmbSirketId.TabIndex = 1;
@@ -73,7 +73,7 @@
 			this.cmbMusteriId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.cmbMusteriId.FormattingEnabled = true;
 			this.cmbMusteriId.Location = new System.Drawing.Point(269, 105);
-			this.cmbMusteriId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbMusteriId.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbMusteriId.Name = "cmbMusteriId";
 			this.cmbMusteriId.Size = new System.Drawing.Size(203, 26);
 			this.cmbMusteriId.TabIndex = 3;
@@ -94,7 +94,7 @@
 			this.cmbAracId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.cmbAracId.FormattingEnabled = true;
 			this.cmbAracId.Location = new System.Drawing.Point(269, 140);
-			this.cmbAracId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbAracId.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbAracId.Name = "cmbAracId";
 			this.cmbAracId.Size = new System.Drawing.Size(203, 26);
 			this.cmbAracId.TabIndex = 5;
@@ -135,7 +135,7 @@
 			// dateTimeVerilisTarih
 			// 
 			this.dateTimeVerilisTarih.Location = new System.Drawing.Point(269, 175);
-			this.dateTimeVerilisTarih.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.dateTimeVerilisTarih.Margin = new System.Windows.Forms.Padding(4);
 			this.dateTimeVerilisTarih.Name = "dateTimeVerilisTarih";
 			this.dateTimeVerilisTarih.Size = new System.Drawing.Size(203, 22);
 			this.dateTimeVerilisTarih.TabIndex = 8;
@@ -143,7 +143,7 @@
 			// dateTimeAlinisTarih
 			// 
 			this.dateTimeAlinisTarih.Location = new System.Drawing.Point(269, 207);
-			this.dateTimeAlinisTarih.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.dateTimeAlinisTarih.Margin = new System.Windows.Forms.Padding(4);
 			this.dateTimeAlinisTarih.Name = "dateTimeAlinisTarih";
 			this.dateTimeAlinisTarih.Size = new System.Drawing.Size(203, 22);
 			this.dateTimeAlinisTarih.TabIndex = 9;
@@ -184,7 +184,7 @@
 			// txtVerilisKM
 			// 
 			this.txtVerilisKM.Location = new System.Drawing.Point(269, 236);
-			this.txtVerilisKM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtVerilisKM.Margin = new System.Windows.Forms.Padding(4);
 			this.txtVerilisKM.Name = "txtVerilisKM";
 			this.txtVerilisKM.Size = new System.Drawing.Size(203, 22);
 			this.txtVerilisKM.TabIndex = 13;
@@ -192,7 +192,7 @@
 			// txtAlinisKM
 			// 
 			this.txtAlinisKM.Location = new System.Drawing.Point(269, 266);
-			this.txtAlinisKM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtAlinisKM.Margin = new System.Windows.Forms.Padding(4);
 			this.txtAlinisKM.Name = "txtAlinisKM";
 			this.txtAlinisKM.Size = new System.Drawing.Size(203, 22);
 			this.txtAlinisKM.TabIndex = 14;
@@ -200,7 +200,7 @@
 			// txtUcret
 			// 
 			this.txtUcret.Location = new System.Drawing.Point(269, 297);
-			this.txtUcret.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtUcret.Margin = new System.Windows.Forms.Padding(4);
 			this.txtUcret.Name = "txtUcret";
 			this.txtUcret.Size = new System.Drawing.Size(203, 22);
 			this.txtUcret.TabIndex = 15;
@@ -209,7 +209,7 @@
 			// 
 			this.btnKiralamaEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.btnKiralamaEkle.Location = new System.Drawing.Point(175, 363);
-			this.btnKiralamaEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnKiralamaEkle.Margin = new System.Windows.Forms.Padding(4);
 			this.btnKiralamaEkle.Name = "btnKiralamaEkle";
 			this.btnKiralamaEkle.Size = new System.Drawing.Size(204, 39);
 			this.btnKiralamaEkle.TabIndex = 16;
@@ -239,9 +239,9 @@
 			this.Controls.Add(this.lblMusteriId);
 			this.Controls.Add(this.cmbSirketId);
 			this.Controls.Add(this.lblSirketId);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frm_KiralamaEkle";
-			this.Text = "frm_KiralamaEkle";
+			this.Text = "Kiralama Ekle";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

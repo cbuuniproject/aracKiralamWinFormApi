@@ -60,7 +60,7 @@
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.dg_Listele);
 			this.Name = "frm_RolListele";
-			this.Text = "frm_RolListele";
+			this.Text = "Rol Listele";
 			((System.ComponentModel.ISupportInitialize)(this.dg_Listele)).EndInit();
 			this.ResumeLayout(false);
 

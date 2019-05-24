@@ -29,5 +29,11 @@ namespace AracKiralamaSistemi
 			
 
 		}
+
+		private void frm_AdminLogin_Load(object sender, EventArgs e)
+		{
+			txtPass.PasswordChar = '*';
+
+		}
 	}
 }

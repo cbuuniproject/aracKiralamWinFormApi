@@ -47,7 +47,7 @@
 			// btnHarcamaTip
 			// 
 			this.btnHarcamaTip.Location = new System.Drawing.Point(275, 150);
-			this.btnHarcamaTip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnHarcamaTip.Margin = new System.Windows.Forms.Padding(4);
 			this.btnHarcamaTip.Name = "btnHarcamaTip";
 			this.btnHarcamaTip.Size = new System.Drawing.Size(145, 36);
 			this.btnHarcamaTip.TabIndex = 4;
@@ -59,7 +59,7 @@
 			// 
 			this.txtHarcamaTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.txtHarcamaTip.Location = new System.Drawing.Point(259, 94);
-			this.txtHarcamaTip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtHarcamaTip.Margin = new System.Windows.Forms.Padding(4);
 			this.txtHarcamaTip.Name = "txtHarcamaTip";
 			this.txtHarcamaTip.Size = new System.Drawing.Size(180, 26);
 			this.txtHarcamaTip.TabIndex = 3;
@@ -72,9 +72,9 @@
 			this.Controls.Add(this.lblHrcmaTip);
 			this.Controls.Add(this.btnHarcamaTip);
 			this.Controls.Add(this.txtHarcamaTip);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frm_HarcamaTuru";
-			this.Text = "frm_HarcamaTuru";
+			this.Text = "Harcama Türü";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

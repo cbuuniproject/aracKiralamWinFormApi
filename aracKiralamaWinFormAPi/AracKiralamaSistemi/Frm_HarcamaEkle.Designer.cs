@@ -131,7 +131,7 @@
 			this.Controls.Add(this.txtAciklama);
 			this.Controls.Add(this.cmbTuru);
 			this.Name = "Frm_HarcamaEkle";
-			this.Text = "Frm_HarcamaEkle";
+			this.Text = "Harcama Ekle";
 			this.Load += new System.EventHandler(this.Frm_HarcamaEkle_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

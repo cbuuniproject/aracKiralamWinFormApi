@@ -94,7 +94,9 @@
 			this.Controls.Add(this.label1);
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frm_AdminLogin";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Admin Girişi";
+			this.Load += new System.EventHandler(this.frm_AdminLogin_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
