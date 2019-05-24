@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA6B0628-0BAB-4049-B90C-A2390F75D033}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AracKiralamaSistemi</RootNamespace>
+    <AssemblyName>AracKiralamaSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AracKiralamaApp.Domains">
+      <HintPath>..\..\Github Projeleri\Soap-proje-1\AracKirala\AracKiralamaApp.Business\bin\Debug\AracKiralamaApp.Domains.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_AdminEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AdminEkran.Designer.cs">
+      <DependentUpon>frm_AdminEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AdminLogin.Designer.cs">
+      <DependentUpon>frm_AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AracEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AracEkle.Designer.cs">
+      <DependentUpon>frm_AracEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AracGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AracGoruntule.Designer.cs">
+      <DependentUpon>frm_AracGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AracGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AracGuncelle.Designer.cs">
+      <DependentUpon>frm_AracGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AracSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AracSil.Designer.cs">
+      <DependentUpon>frm_AracSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_GunlukAracTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_GunlukAracTakip.Designer.cs">
+      <DependentUpon>frm_GunlukAracTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_HarcamaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_HarcamaEkle.Designer.cs">
+      <DependentUpon>Frm_HarcamaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HarcamaTuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HarcamaTuru.Designer.cs">
+      <DependentUpon>frm_HarcamaTuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KiralamaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KiralamaEkle.Designer.cs">
+      <DependentUpon>frm_KiralamaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KiralamaGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KiralamaGoruntule.Designer.cs">
+      <DependentUpon>frm_KiralamaGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KullaniciEkle.Designer.cs">
+      <DependentUpon>frm_KullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MusteriEkle.Designer.cs">
+      <DependentUpon>frm_MusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MusteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MusteriListele.Designer.cs">
+      <DependentUpon>frm_MusteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PersonelEkle.Designer.cs">
+      <DependentUpon>frm_PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PersonelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PersonelList.Designer.cs">
+      <DependentUpon>frm_PersonelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PersonelSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PersonelSil.Designer.cs">
+      <DependentUpon>frm_PersonelSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RezervasyonGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RezervasyonGoruntule.Designer.cs">
+      <DependentUpon>frm_RezervasyonGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RolEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RolEkle.Designer.cs">
+      <DependentUpon>frm_RolEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Secim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Secim.Designer.cs">
+      <DependentUpon>frm_Secim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SirketEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SirketEkle.Designer.cs">
+      <DependentUpon>frm_SirketEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SirketEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SirketEkran.Designer.cs">
+      <DependentUpon>frm_SirketEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OturumBilgileri.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_Sirket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Sirket.Designer.cs">
+      <DependentUpon>frm_Sirket.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_AdminEkran.resx">
+      <DependentUpon>frm_AdminEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AdminLogin.resx">
+      <DependentUpon>frm_AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AracEkle.resx">
+      <DependentUpon>frm_AracEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AracGoruntule.resx">
+      <DependentUpon>frm_AracGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AracGuncelle.resx">
+      <DependentUpon>frm_AracGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AracSil.resx">
+      <DependentUpon>frm_AracSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_GunlukAracTakip.resx">
+      <DependentUpon>frm_GunlukAracTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_HarcamaEkle.resx">
+      <DependentUpon>Frm_HarcamaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_HarcamaTuru.resx">
+      <DependentUpon>frm_HarcamaTuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KiralamaEkle.resx">
+      <DependentUpon>frm_KiralamaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KiralamaGoruntule.resx">
+      <DependentUpon>frm_KiralamaGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KullaniciEkle.resx">
+      <DependentUpon>frm_KullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MusteriEkle.resx">
+      <DependentUpon>frm_MusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MusteriListele.resx">
+      <DependentUpon>frm_MusteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PersonelEkle.resx">
+      <DependentUpon>frm_PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PersonelList.resx">
+      <DependentUpon>frm_PersonelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PersonelSil.resx">
+      <DependentUpon>frm_PersonelSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RezervasyonGoruntule.resx">
+      <DependentUpon>frm_RezervasyonGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RolEkle.resx">
+      <DependentUpon>frm_RolEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Secim.resx">
+      <DependentUpon>frm_Secim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SirketEkle.resx">
+      <DependentUpon>frm_SirketEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SirketEkran.resx">
+      <DependentUpon>frm_SirketEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_Sirket.resx">
+      <DependentUpon>frm_Sirket.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
